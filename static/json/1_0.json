@@ -1,0 +1,65 @@
+[
+    {
+        "titulo": "Vagas de Estacionamento",
+        "definicao": "Em um prédio de uma companhia existem seis vagas de estacionamento, separadas das demais vagas, para os diretores da empresa. Elas estão dispostas uma ao lado da outra e são numeradas da esquerda para a direita de um a seis. Estas vagas são ocupadas por exatamente seis carros: C, D, F, H, O e V. As seguintes regras também são aplicadas:",
+        "tipo": "Posicionamento",
+        "variaveis": "CDFHOV",
+        "questoes": [
+            {
+                "enunciado": "Qual  das  seguintes  opções  é  uma  lista completa e correta de carros ocupando as vagas da esquerda para a direita?",
+                "opcoes": [
+                    "V, O, C, F, D, H",
+                    "C, D, H, O, V, F",
+                    "C, V, O, F, H, D",
+                    "D, O, H, F, V, C",
+                    "C, F, V, O, H, D"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "Qual  das  seguintes  armações  pode  ser verdadeira?",
+                "opcoes": [
+                    "D está na terceira vaga a partir da esquerda",
+                    "C está imediatamente ao lado de O",
+                    "O está na terceira vaga a partir da esquerda",
+                    "V está na quarta vaga a partir da esquerda",
+                    "D está imediatamente ao lado de H"
+                ],
+                "resposta": 2
+            },
+            {
+                "enunciado": "Qual das seguintes opções é uma vaga que H pode ocupar?",
+                "opcoes": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "resposta": 2
+            },
+            {
+                "enunciado": "Qual das seguintes opções deve obrigatoriamente ser falsa?",
+                "opcoes": [
+                    "C está adjacente ao D",
+                    "V está adjacente ao F",
+                    "D está adjacente ao O",
+                    "H está adjacente ao V",
+                    "O está adjacente ao H"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "Qual dos seguintes pares contém carros que podem ocupar a terceira ou a quarta vaga a partir da esquerda?",
+                "opcoes": [
+                    "H e O",
+                    "D e F",
+                    "F e V",
+                    "H e D",
+                    "O e D"
+                ],
+                "resposta": 0
+            }
+        ]
+    }
+]
