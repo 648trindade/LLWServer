@@ -3,7 +3,7 @@
         "titulo": "Vagas de Estacionamento",
         "definicao": "Em um prédio de uma companhia existem seis vagas de estacionamento, separadas das demais vagas, para os diretores da empresa. Elas estão dispostas uma ao lado da outra e são numeradas da esquerda para a direita de um a seis. Estas vagas são ocupadas por exatamente seis carros: C, D, F, H, O e V. As seguintes regras também são aplicadas:\n* Ha exatamente três carros entre V e D.\n* Existe no mnimo um carro entre O e F.\n* C e adjacente a somente um unico carro.",
         "tipo": "Posicionamento",
-        "variaveis": "CDFHOV",
+        "variaveis": "C,D,F,H,O,V",
         "questoes": [
             {
                 "enunciado": "Qual  das  seguintes  opções  é  uma  lista completa e correta de carros ocupando as vagas da esquerda para a direita?",
@@ -59,6 +59,225 @@
                     "O e D"
                 ],
                 "resposta": 0
+            }
+        ]
+    },
+    {
+        "titulo": "Biblioteca",
+        "definicao": "Exatamente nove revistas devem ser expostas em uma das prateleiras da biblioteca da escola. Vamos chamar a posição mais à esquerda de primeira, e a mais à direita de nona posição. Das nove revistas, quatro são sobre ciência, três são sobre esportes, e duas são sobre culinária. As quatro revistas sobre ciência devem ser colocados uma vizinha à outra, e as duas revistas sobre culinária também devem ser dispostas uma vizinha à outra (ou seja, uma ao lado da outra)As três revistas sobre esportes não precisam estar colocadas uma vizinha à outra.",
+        "tipo": "Sequenciamento",
+        "variaveis": "Ciê,Esp,Cul",
+        "questoes": [
+            {
+                "enunciado": "Se a sexta posição é ocupada por uma revista de ciência, e a oitava posição é ocupada por uma revista de esportes, qual das seguintes posições deve ser ocupada por uma revista de culinária?",
+                "opcoes": [
+                    "A primeira",
+                    "A segunda",
+                    "A terceira",
+                    "A quarta",
+                    "A nona"
+                ],
+                "resposta": 1 
+            },
+            {
+                "enunciado": "As revistas de esportes devem ser colocadas uma vizinha à outra se uma revista de culinária está em qual das seguintes posições?",
+                "opcoes": [
+                    "Na primeira",
+                    "Na terceira",
+                    "Na quinta",
+                    "Na sétima",
+                    "Na nona"
+                ],
+                "resposta": 2
+            },
+            {
+                "enunciado": "Se a primeira e a sétima posições têm revistas do mesmo tipo, qual das seguintes posições deve ter uma revista de ciência?",
+                "opcoes": [
+                    "A primeira",
+                    "A segunda",
+                    "A quarta",
+                    "A sexta",
+                    "A oitava"
+                ],
+                "resposta": 2
+            },
+            {
+                "enunciado": "Se uma revista de esportes ocupa a quinta posição na prateleira, e uma revista de ciência ocupa a nona posição, qual dos seguintes pares de posições devem ter revistas de tipos diferentes?",
+                "opcoes": [
+                    "A primeira e a segunda",
+                    "A segunda e a terceira",
+                    "A segunda e a quarta",
+                    "A terceira e a quarta",
+                    "A terceira e a quinta"
+                ],
+                "resposta": 2
+            }
+        ]
+    },
+    {
+        "titulo": "Salas de Aula",
+        "definicao": "Uma escola conta com sete salas de aula que devem ser pintadas. As salas estão localizadas em um único lado do corredor, sendo numeradas seqüencialmente, de um a sete, da frente para os fundos do prédio.\n Cada sala de aula deve ser pintada utilizando uma única cor, de acordo com as seguintes restrições:\n• Duas salas devem ser pintadas de branco; duas salas devem ser pintadas de azul; duas salas devem ser pintadas de verde; e uma sala deve ser pintada de amarelo.\n• As duas salas pintadas de verde devem ser vizinhas (contíguas).\n• As duas salas pintadas de azul não podem ser vizinhas (contíguas).\n• A sala pintada de amarelo não pode ser vizinha de uma sala pintada de branco\n• A sala número 3 deve ser pintada de branco.",
+        "tipo": "Posicionamento",
+        "variaveis": "br,az,ve,am",
+        "questoes": [
+            {
+                "enunciado": "Se a sala 2 for pintada de verde, qual das seguintes salas deve também ser pintada de verde?",
+                "opcoes": [
+                    "Sala 1",
+                    "Sala 3",
+                    "Sala 4",
+                    "Sala 5",
+                    "Sala 6"
+                ],
+                "resposta": 0 
+            },
+            {
+                "enunciado": "Se a sala 5 for pintada de branco, qual das seguintes alternativas pode ser verdadeira?",
+                "opcoes": [
+                    "Sala 1 é pintada de azul.",
+                    "Sala 2 é pintada de amarelo.",
+                    "Sala 4 é pintada de verde.",
+                    "Sala 4 é pintada de amarelo.",
+                    "Sala 6 é pintada de azul."
+                ],
+                "resposta": 4
+            },
+            {
+                "enunciado": "Se a sala 4 for pintada de branco e uma sala que é pintada de verde for vizinha de uma sala que é pintada de branco, qual das seguintes alternativas precisa ser verdadeira?",
+                "opcoes": [
+                    "Sala 1 será pintada de verde.",
+                    "Sala 1 será pintada de amarelo.",
+                    "Sala 5 será pintada de azul.",
+                    "Sala 6 será pintada de amarelo.",
+                    "Sala 7 será pintada de azul."
+                ],
+                "resposta": 4
+            },
+            {
+                "enunciado": ". Qual das seguintes restrições, quando combinada com as restrições originais, tem como conseqüência a determinação completa da cor que cada sala deve ser pintada:",
+                "opcoes": [
+                    "Sala 1 deve ser pintada de amarelo.",
+                    "Sala 1 deve ser pintada de verde.",
+                    "Sala 4 deve ser pintada de azul.",
+                    "Sala 6 deve ser pintada de branco.",
+                    "Sala 6 deve ser pintada de azul."
+                ],
+                "resposta": 3
+            }
+        ]
+    },
+    {
+        "titulo": "Supermercado",
+        "definicao": "Um supermercado iniciou um serviço de entregas das compras de seus clientes. O serviço tem duas categorias, prioritária (quando a compra inclui alimentos congelados) e ordinária (quando a compra não inclui congelados). Seis clientes, identificados por K, L, M, O, P e S, já solicitaram o serviço no primeiro dia de funcionamento. A entrega das compras (dos dois tipos) é sujeita às seguintes condições:\n• Independentemente do tipo (ordinária ou prioritária), compras para os clientes P e S devem ser entregues antes das compras serem entregues para o cliente M.\n• Independentemente do tipo (ordinária ou prioritária), compras para os clientes L e K devem ser entregues antes das compras serem entregues para o cliente S.\n• Desde que as duas restrições acima permitam, compras para clientes que possuam entrega prioritária devem ser entregues antes de compras para clientes que não tenham entrega prioritária",
+        "tipo": "Sequenciamento",
+        "variaveis": "K,L,M,O,P,S",
+        "questoes": [
+            {
+                "enunciado": "Se K é o único cliente com entrega prioritária, qual das seguintes alternativas lista os clientes na ordem em que estes podem receber suas compras?",
+                "opcoes": [
+                    "L, K, P, S, O e M",
+                    "L, K, S, P, M e O",
+                    "K, L, P, M, S e O",
+                    "K. P, L, S, O e M",
+                    "O, K, L, P, S e M"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "Se os clientes L, M e S têm entrega prioritária, qual das seguintes alternativas lista os clientes na ordem em que estes DEVEM receber suas compras?",
+                "opcoes": [
+                    "K, L, P, S, O e M",
+                    "L, K, O, P, S e M",
+                    "L, K, S, P, M e O",
+                    "M, L, S, P, K e O",
+                    "S, L, M, P, K e O"
+                ],
+                "resposta": 2
+            },
+            {
+                "enunciado": "Se a ordem na qual as compras são entregues é O, P, L, K, S e M, e se S está recebendo entrega prioritária, qual das seguintes alternativas é a lista de todos os clientes que também devem necessariamente estar recebendo entrega prioritária?",
+                "opcoes": [
+                    "O e L",
+                    "O e P",
+                    "P e L",
+                    "P e M",
+                    "O, P, L e K"
+                ],
+                "resposta": 1
+            }
+        ]
+    },
+     {
+        "titulo": "Linguagem de Programação",
+        "definicao": "Atualmente existe um grande número de diferentes linguagens de programaçãoo: Java, Pascal, C, e muitas outras. Essas linguagens são utilizadas para programar computadores e têm regras muito estritas. Em uma determinada linguagem de programação, um comando é definido como uma sequência de cinco palavras, de tal forma que\n• cada palavra deve conter pelo menos cinco letras, sendo que não mais do que duas podem ser vogais (a, e, i, o, u);\n• uma palavra não pode iniciar com as letras c, q ou z;\n• considere a sequência de cinco letras formadas pela primeira letra de cada uma das cinco palavras; essas letras devem ser consecutivas na ordem alfabética (abcdefghijklmnopqrstuvwxyz).",
+        "tipo": "Sequenciamento",
+        "variaveis": "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z",
+        "questoes": [
+            {
+                "enunciado": "Qual das seguintes alternativas é um comando válido?",
+                "opcoes": [
+                    "abrir brincar durar entrar faltar",
+                    "junto kremlim livrar missa nariz",
+                    "nenhum olhar perder querer roncar",
+                    "rosnar subir trincar urrar voar",
+                    "falar gravar hertz jorrar kodak"
+                ],
+                "resposta": 1
+            },
+            {
+                "enunciado": "Se a terceira palavra em um comando é ‘humor’, a primeira letra da primeira palavra e a primeira letra da última palavra do comando são, respectivamente:",
+                "opcoes": [
+                    "c, g",
+                    "d, k",
+                    "e, j",
+                    "f, j",
+                    "g, l"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "A última palavra de um comando NÃO PODE iniciar com a letra",
+                "opcoes": [
+                    "j",
+                    "n",
+                    "o",
+                    "t",
+                    "v"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "Qual das seguintes palavras é válida para iniciar um comando:",
+                "opcoes": [
+                    "abril",
+                    "ritos",
+                    "ombro",
+                    "nunca",
+                    "xinxim"
+                ],
+                "resposta": 1
+            },
+            {
+                "enunciado": "Se “homem” é a última palavra em um comando, é possível que a primeira palavra nesse comando seja",
+                "opcoes": [
+                    "doer",
+                    "drúida",
+                    "dunga",
+                    "duro",
+                    "dueto"
+                ],
+                "resposta": 3
+            },
+            {
+                "enunciado": "Cada uma das seguintes palavras pode ser a última palavra em um comando EXCETO",
+                "opcoes": [
+                    "norte",
+                    "morte",
+                    "vidro",
+                    "super",
+                    "ladrar"
+                ],
+                "resposta": 1
             }
         ]
     }
